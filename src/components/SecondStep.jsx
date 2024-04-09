@@ -120,7 +120,7 @@ const SecondStep = () => {
             <h2 className="text-2xl font-bold mb-3 text-center md:text-left">
               Add an avatar
             </h2>
-            <div className="p-6 container flex justify-center flex-col md:flex-row space-x-20 items-center">
+            <div className="p-6 container flex justify-center flex-col md:flex-row  items-center">
               <div
                 className="w-44 h-44 rounded-full border-4 border-dashed border-[#DEDFDF] flex items-center justify-center"
                 onDragOver={handleDragOver}
@@ -140,10 +140,10 @@ const SecondStep = () => {
                   </span>
                 )}
               </div>
-              <div className="image_field flex justify-start flex-col space-y-5">
+              <div className="image_field flex justify-center md:justify-start items-center md:items-start flex-col  space-y-5  md:ml-10">
                 <label
                   htmlFor="image-upload"
-                  className="mt-4 border-2 block w-4/5 text-center md:w-40 border-[#E8E9E9] py-3 px-5 font-bold rounded-lg cursor-pointer"
+                  className="mt-4 border-2 block  text-center w-40 border-[#E8E9E9] py-3 px-5 font-bold rounded-lg cursor-pointer"
                 >
                   Choose image
                 </label>
@@ -158,7 +158,7 @@ const SecondStep = () => {
                   <div>
                     <button
                       type="button"
-                      className="inline-flex justify-center w-full rounded-md text-bold px-4 py-2 font-bold text-gray-400 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+                      className="flex flex-col justify-center items-center md:flex-row w-full  rounded-md text-bold px-4 py-2 font-bold text-gray-400 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
                       id="menu-button"
                       aria-expanded={isDropdownOpen}
                       aria-haspopup="true"
@@ -249,7 +249,7 @@ const SecondStep = () => {
           <div className="container mt-7 flex flex-col items-center md:items-start">
             <h2 className="text-2xl font-bold mb-3 ">Add your location</h2>
             <input
-              className="border-b-2 py-3 text-xl pl-2 w-1/2 md:w-full"
+              className="border-b-2 py-3 text-xl pl-2 w-full"
               type="text"
               name="location"
               id="location"
@@ -260,7 +260,7 @@ const SecondStep = () => {
             <br />
             <button
               type="submit"
-              className={`h-10 w-1/2 bg-pink-500 hover:bg-pink-600 focus:border-none text-white p-2 rounded-lg px-24 font-bold text-center mb-4 lg:mb-5 mt-3 ${
+              className={`h-10 w-1/2 flex justify-center bg-pink-500 hover:bg-pink-600 focus:border-none text-white p-2 rounded-lg px-24 font-bold text-center mb-4 lg:mb-5 mt-3 ${
                 !isFormValid ? "disabled:bg-[#F8B9D1]" : ""
               }`}
               disabled={!isFormValid}
