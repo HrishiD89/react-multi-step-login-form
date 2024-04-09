@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#error-text > p::before{
+    content: "\2022";
+    color: #ff0000; 
+    margin-right: 5px;
+}
